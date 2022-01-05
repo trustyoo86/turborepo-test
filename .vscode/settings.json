@@ -1,0 +1,14 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.formatOnSave": true,
+  "search.exclude": {
+    "**/node_modules": true
+  },
+  "files.trimTrailingWhitespace": true,
+  "editor.codeActionsOnSave": {
+    "editor.action.fixAll": true,
+    "source.fixAll.eslint": true
+  }
+}
