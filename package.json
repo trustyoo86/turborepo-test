@@ -37,7 +37,8 @@
         "cache": false
       }
     },
-    "baseBranch": "origin/main"
+    "baseBranch": "origin/main",
+    "npmClient": "yarn"
   },
   "engines": {
     "npm": ">=7.0.0",
