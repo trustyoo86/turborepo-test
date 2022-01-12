@@ -1,10 +1,11 @@
+import { ChangeEvent } from 'react';
 import { useRecoilState } from 'recoil';
 import { nameState } from '../recoil/atoms/name';
 
 export default function About() {
   const [name, setNameState] = useRecoilState(nameState);
 
-  const updateName = e => {
+  const updateName = (e: ChangeEvent<HTMLInputElement>) => {
     setNameState(e.target.value);
   };
 
