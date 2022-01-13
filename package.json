@@ -30,6 +30,9 @@
           ".next/**"
         ]
       },
+      "start": {
+        "outputs": []
+      },
       "lint": {
         "outputs": []
       },
