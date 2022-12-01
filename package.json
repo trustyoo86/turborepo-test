@@ -19,30 +19,6 @@
     "prettier": "^2.5.1",
     "turbo": "latest"
   },
-  "turbo": {
-    "pipeline": {
-      "build": {
-        "dependsOn": [
-          "^build"
-        ],
-        "outputs": [
-          "dist/**",
-          ".next/**"
-        ]
-      },
-      "start": {
-        "outputs": []
-      },
-      "lint": {
-        "outputs": []
-      },
-      "dev": {
-        "cache": false
-      }
-    },
-    "baseBranch": "origin/main",
-    "npmClient": "yarn"
-  },
   "engines": {
     "npm": ">=7.0.0",
     "node": ">=14.0.0"
@@ -57,5 +33,6 @@
     "*.json": [
       "prettier --write"
     ]
-  }
+  },
+  "packageManager": "yarn@3.3.0"
 }
