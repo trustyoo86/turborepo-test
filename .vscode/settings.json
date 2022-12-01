@@ -4,11 +4,14 @@
   "editor.insertSpaces": true,
   "editor.formatOnSave": true,
   "search.exclude": {
-    "**/node_modules": true
+    "**/node_modules": true,
+    "**/.yarn": true,
+    "**/.pnp.*": true
   },
   "files.trimTrailingWhitespace": true,
   "editor.codeActionsOnSave": {
     "editor.action.fixAll": true,
     "source.fixAll.eslint": true
-  }
+  },
+  "prettier.prettierPath": ".yarn/sdks/prettier/index.js"
 }
