@@ -9,6 +9,7 @@
     "**/.pnp.*": true
   },
   "files.trimTrailingWhitespace": true,
+  "eslint.workingDirectories": [{ "mode": "auto" }],
   "editor.codeActionsOnSave": {
     "editor.action.fixAll": true,
     "source.fixAll.eslint": true
