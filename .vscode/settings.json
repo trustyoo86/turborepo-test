@@ -9,10 +9,16 @@
     "**/.pnp.*": true
   },
   "files.trimTrailingWhitespace": true,
-  "eslint.workingDirectories": [{ "mode": "auto" }],
+  "eslint.workingDirectories": [
+    {
+      "mode": "auto"
+    }
+  ],
   "editor.codeActionsOnSave": {
     "editor.action.fixAll": true,
     "source.fixAll.eslint": true
   },
+  "typescript.tsdk": ".yarn/sdks/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
   "prettier.prettierPath": ".yarn/sdks/prettier/index.js"
 }
