@@ -14,7 +14,8 @@
     "prepare": "husky install"
   },
   "devDependencies": {
-    "@yarnpkg/sdks": "^3.0.0-rc.32",
+    "@types/eslint": "^8",
+    "eslint": "^8.30.0",
     "husky": "^7.0.4",
     "lint-staged": "^12.1.3",
     "prettier": "^2.5.1",
@@ -26,14 +27,8 @@
     "node": ">=14.0.0"
   },
   "lint-staged": {
-    "apps/**/*.{js,ts,jsx,tsx}": [
-      "eslint --fix",
-      "prettier --write"
-    ],
-    "packages/ui/**/*.{js,ts,jsx,tsx}": [
-      "eslint --fix",
-      "prettier --write"
-    ]
+    "apps/**/*.{js,ts,jsx,tsx}": [],
+    "packages/ui/**/*.{js,ts,jsx,tsx}": []
   },
   "packageManager": "yarn@3.3.0"
 }
