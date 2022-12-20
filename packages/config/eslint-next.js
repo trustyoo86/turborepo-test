@@ -20,7 +20,7 @@ module.exports = {
     next: {
       rootDir: [
         'apps/next-app/',
-        'apps/next-next-app/',
+        'apps/next-my-app/',
         'packages/ui/',
         'packages/config/',
         'packages/tsconfig/',
