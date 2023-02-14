@@ -41,6 +41,7 @@ jobs:
       - name: turborepo local server
         uses: felixmosh/turborepo-gh-artifacts@v2
         with:
+          server-token: ${{ github.token }}
           repo-token: ${{ github.token }}
 
       - name: Build
