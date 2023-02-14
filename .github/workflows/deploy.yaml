@@ -47,5 +47,5 @@ jobs:
         run: yarn build --scope=next-my-app
         env:
           TURBO_API: 'http://127.0.0.1:9080'
-          TURBO_TOKEN: ''
+          TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
           TURBO_TEAM: 'foo'
