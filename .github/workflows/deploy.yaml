@@ -39,7 +39,7 @@ jobs:
         run: yarn
 
       - name: turborepo local server
-        uses: felxmosh/turborepo-gh-artifacts@v2
+        uses: felixmosh/turborepo-gh-artifacts@v2
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
 
