@@ -45,4 +45,4 @@ jobs:
           repo-token: ${{ github.token }}
 
       - name: Build
-        run: yarn build --scope=next-my-app --api="http://127.0.0.1:9080" --token="${{ secrets.TURBO_TOKEN }}" --team="foo"
+        run: yarn build --scope=next-my-app --api="http://127.0.0.1:9080" --token="${{ github.token }}" --team="foo"
