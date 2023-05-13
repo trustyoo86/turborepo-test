@@ -2012,6 +2012,60 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["@rometools/cli-darwin-arm64", [\
+        ["npm:12.1.0", {\
+          "packageLocation": "./.yarn/unplugged/@rometools-cli-darwin-arm64-npm-12.1.0-cd66b12a3c/node_modules/@rometools/cli-darwin-arm64/",\
+          "packageDependencies": [\
+            ["@rometools/cli-darwin-arm64", "npm:12.1.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@rometools/cli-darwin-x64", [\
+        ["npm:12.1.0", {\
+          "packageLocation": "./.yarn/unplugged/@rometools-cli-darwin-x64-npm-12.1.0-d4d8adf077/node_modules/@rometools/cli-darwin-x64/",\
+          "packageDependencies": [\
+            ["@rometools/cli-darwin-x64", "npm:12.1.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@rometools/cli-linux-arm64", [\
+        ["npm:12.1.0", {\
+          "packageLocation": "./.yarn/unplugged/@rometools-cli-linux-arm64-npm-12.1.0-fc58be9aa6/node_modules/@rometools/cli-linux-arm64/",\
+          "packageDependencies": [\
+            ["@rometools/cli-linux-arm64", "npm:12.1.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@rometools/cli-linux-x64", [\
+        ["npm:12.1.0", {\
+          "packageLocation": "./.yarn/unplugged/@rometools-cli-linux-x64-npm-12.1.0-f911b31c90/node_modules/@rometools/cli-linux-x64/",\
+          "packageDependencies": [\
+            ["@rometools/cli-linux-x64", "npm:12.1.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@rometools/cli-win32-arm64", [\
+        ["npm:12.1.0", {\
+          "packageLocation": "./.yarn/unplugged/@rometools-cli-win32-arm64-npm-12.1.0-d771edfa43/node_modules/@rometools/cli-win32-arm64/",\
+          "packageDependencies": [\
+            ["@rometools/cli-win32-arm64", "npm:12.1.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@rometools/cli-win32-x64", [\
+        ["npm:12.1.0", {\
+          "packageLocation": "./.yarn/unplugged/@rometools-cli-win32-x64-npm-12.1.0-7874d8cd89/node_modules/@rometools/cli-win32-x64/",\
+          "packageDependencies": [\
+            ["@rometools/cli-win32-x64", "npm:12.1.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["@rushstack/eslint-patch", [\
         ["npm:1.2.0", {\
           "packageLocation": "./.yarn/cache/@rushstack-eslint-patch-npm-1.2.0-917f402e4e-faa749faae.zip/node_modules/@rushstack/eslint-patch/",\
@@ -7213,6 +7267,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react", "npm:17.0.2"],\
             ["react-dom", "virtual:92f1a9eaef956bed3a4b5f8a9b8817459968a0b92350032dfe66e40148e62a12c50618944e94cb4eaf37f64a4cd636a37e51578c217f895eded7fd2e337e1ccc#npm:17.0.2"],\
             ["recoil", "virtual:92f1a9eaef956bed3a4b5f8a9b8817459968a0b92350032dfe66e40148e62a12c50618944e94cb4eaf37f64a4cd636a37e51578c217f895eded7fd2e337e1ccc#npm:0.5.2"],\
+            ["rome", "npm:12.1.0"],\
             ["tailwindcss", "virtual:92f1a9eaef956bed3a4b5f8a9b8817459968a0b92350032dfe66e40148e62a12c50618944e94cb4eaf37f64a4cd636a37e51578c217f895eded7fd2e337e1ccc#npm:3.2.4"],\
             ["tsconfig", "workspace:packages/tsconfig"],\
             ["typescript", "patch:typescript@npm%3A4.9.3#~builtin<compat/typescript>::version=4.9.3&hash=d73830"]\
@@ -9586,6 +9641,21 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["chalk", "npm:1.1.3"],\
             ["minimist", "npm:1.2.7"],\
             ["source-map-support", "npm:0.3.3"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["rome", [\
+        ["npm:12.1.0", {\
+          "packageLocation": "./.yarn/unplugged/rome-npm-12.1.0-49e744f987/node_modules/rome/",\
+          "packageDependencies": [\
+            ["rome", "npm:12.1.0"],\
+            ["@rometools/cli-darwin-arm64", "npm:12.1.0"],\
+            ["@rometools/cli-darwin-x64", "npm:12.1.0"],\
+            ["@rometools/cli-linux-arm64", "npm:12.1.0"],\
+            ["@rometools/cli-linux-x64", "npm:12.1.0"],\
+            ["@rometools/cli-win32-arm64", "npm:12.1.0"],\
+            ["@rometools/cli-win32-x64", "npm:12.1.0"]\
           ],\
           "linkType": "HARD"\
         }]\
