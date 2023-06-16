@@ -18,10 +18,10 @@
     "editor.action.fixAll": true,
     "source.fixAll.eslint": true
   },
-  "typescript.tsdk": ".yarn/sdks/typescript/lib",
+  "typescript.tsdk": "node_modules/typescript/lib",
   "typescript.enablePromptUseWorkspaceTsdk": true,
-  "prettier.prettierPath": ".yarn/sdks/prettier/index.js",
-  "eslint.nodePath": ".yarn/sdks",
+  "prettier.prettierPath": "node_modules/prettier/index.js",
+  "eslint.nodePath": "node_modules",
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
