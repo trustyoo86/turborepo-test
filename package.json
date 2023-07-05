@@ -14,7 +14,7 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "prepare": "husky install",
     "deploy:build": "open-next build",
-    "deploy": "sst deploy --stage prod"
+    "deploy": "sst deploy"
   },
   "devDependencies": {
     "@types/eslint": "^8",

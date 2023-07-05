@@ -10,9 +10,13 @@ const nextConfig = {
       config.plugins.push(
         new NextFederationPlugin({
           name: 'AdminApp',
-          filename: 'AdminApp.js',
+          filename: 'remoteApp.js',
+          exposes: {
+            AboutDetail: './pages/about/[aboutId]/index.tsx',
+          },
           remotes: {
-            about: 'about@http://localhost:3001/remoteEntry.js',
+            about:
+              'about@https://d2ztl5ibm2uj8u.cloudfront.net/about/remoteEntry.js',
           },
           shared: {
             swr: { singleton: true, requiredVersion: deps.swr, eager: true },
