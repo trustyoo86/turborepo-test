@@ -50,3 +50,5 @@ yarn-error.log*
 .sst/*
 !.sst/types
 !.sst/outputs.json
+
+dist/*

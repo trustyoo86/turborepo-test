@@ -14,17 +14,19 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "prepare": "husky install",
     "deploy:build": "open-next build",
-    "deploy": "sst deploy"
+    "deploy:admin": "APP=admin sst deploy",
+    "deploy:webview": "APP=webview sst deploy"
   },
   "devDependencies": {
     "@types/eslint": "^8",
     "aws-cdk-lib": "^2.83.1",
     "constructs": "10.1.156",
+    "dotenv": "^16.3.1",
     "eslint": "^8.30.0",
     "husky": "^7.0.4",
     "lint-staged": "^12.1.3",
     "prettier": "^2.5.1",
-    "sst": "^2.13.1",
+    "sst": "2.18.4",
     "turbo": "latest",
     "typescript": "^4.9.3"
   },
@@ -38,6 +40,6 @@
   },
   "packageManager": "yarn@3.3.0",
   "dependencies": {
-    "open-next": "1.4.0"
+    "open-next": "2.0.4"
   }
 }
