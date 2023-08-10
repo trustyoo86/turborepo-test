@@ -16,6 +16,7 @@ module.exports = {
     'prettier',
   ],
   plugins: ['import', '@typescript-eslint'],
+  parser: '@typescript-eslint/parser',
   settings: {
     next: {
       rootDir: [
@@ -36,7 +37,7 @@ module.exports = {
       },
       typescript: {
         alwaysTryTypes: true,
-        project: ['tsconfig.json', 'package/tsconfig.json'],
+        project: ['apps/*/tsconfig.json', 'package/tsconfig.json'],
       },
     },
   },
@@ -122,6 +123,21 @@ module.exports = {
     'react/prop-types': 'off',
     'redux-saga/no-unhandled-errors': 'off',
     'react/display-name': 'off',
+    'import/order': [
+      'error',
+      {
+        groups: [
+          ['builtin', 'external'],
+          'internal',
+          ['parent', 'sibling'],
+          'index',
+        ],
+        alphabetize: {
+          order: 'asc',
+          caseInsensitive: true,
+        },
+      },
+    ],
   },
   overrides: [
     {
