@@ -26,6 +26,7 @@
     "@module-federation/nextjs-mf": "^6.5.1",
     "@types/eslint": "^8",
     "@types/react": "17.0.38",
+    "config": "workspace:^",
     "sst": "^2.13.1"
   }
 }

@@ -1,10 +1,11 @@
 import Button from '@/services/about/Button';
-import dynamic from 'next/dynamic';
+import { Card } from 'antd';
 
 export default function AboutDynamic() {
   return (
-    <div>
+    <Card>
       AboutId is:
-    </div>
+      <Button />
+    </Card>
   );
 }
