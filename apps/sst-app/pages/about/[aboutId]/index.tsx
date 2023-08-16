@@ -1,5 +1,5 @@
-import Button from '@/services/about/Button';
 import { Card } from 'antd';
+import Button from '@/services/about/Button';
 
 export default function AboutDynamic() {
   return (
