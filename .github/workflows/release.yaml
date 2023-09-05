@@ -1,0 +1,58 @@
+name: 'Release package.json'
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'deploy version'
+        required: true
+
+jobs:
+  release:
+    name: 'project release'
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-verison: [14.x]
+    steps:
+      - name: Repository checkout
+        uses: actions/checkout@v1
+        with:
+          ref: main
+
+      - name: Gets semantic release info
+        id: semantic_release_info
+        uses: jossef/action-semantic-release-info@v1
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+
+      - name: admin version
+        uses: jossef/action-set-json-field@v2
+        with:
+          file: apps/admin/package.json
+          field: version
+          value: ${{ github.event.inputs.version }}
+
+      - name: commit files
+        run: |
+          git config --local user.email "trustyoo86@gmail.com"
+          git config --local user.name "Hanseung Yoo"
+          git add .
+          git commit -m ":rocket: LIFEPLUS-TRIBES v${{ github.event.inputs.version }}"
+          git tag "v${{ github.event.inputs.version }}"
+
+      - name: changes push
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          github_token: ${{ github.token }}
+          branch: main
+
+      - name: create github release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        with:
+          tag_name: 'v${{github.event.inputs.version}}'
+          release_name: 'Release - v${{github.event.inputs.version}}'
+          body: ${{ steps.semantic_release_info.outputs.notes }}
+          draft: false
+          prerelease: false
